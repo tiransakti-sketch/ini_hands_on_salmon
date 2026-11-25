@@ -1,0 +1,12 @@
+63f7b34db8d8cdea90c76aacccf841ec
+::res://::1795625591
+icon.svg::CompressedTexture2D::3112958383654525430::1795622077::1795622108::1::::<><><>0<>0<>932da510d03e3e4ac0a84e67ecd4cd56<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
+::res://asset/::1795625037
+::res://asset/image/::1795625827
+Desain MC 1.png::CompressedTexture2D::4961940081381023316::1795622883::1795625838::1::::<><><>0<>0<>601d5eb557975456ed889fd85ffa70b0<>res://.godot/imported/Desain MC 1.png-577f9a493cabc2681e6dbb7783b9c305.ctex::
+Text box.png::CompressedTexture2D::1932644642242953446::1795622947::1795625052::1::::<><><>0<>0<>fd065642c26330acd6952d1a783aea33<>res://.godot/imported/Text box.png-40ec4ff190da36d81a1cf05358bc9720.ctex::
+::res://scene/::1795625640
+textbox.tscn::PackedScene::6498560774204173247::1795625640::0::1::::<><><>0<>0<><>::uid://8lleftmfm5jb::::res://script/textbox.gd<>uid://2sgm0m4pl4w5::::res://asset/image/Text box.png
+::res://script/::1795625640
+DialogManager.gd::GDScript::3405954106708043998::1795625640::0::1::::<>Node<><>0<>0<><>::
+textbox.gd::GDScript::2339615317966224923::1795625640::0::1::::<>Control<><>0<>0<><>::
