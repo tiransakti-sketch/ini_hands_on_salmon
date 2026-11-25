@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://dv7ne1bl3kmlf"]
+
+[ext_resource type="Script" uid="uid://cyfbm57clu60u" path="res://scene1.gd" id="1_6yo5u"]
+[ext_resource type="Texture2D" uid="uid://ccxuos8wfg8nw" path="res://asset/image/Desain MC 1.png" id="2_u42qe"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_6yo5u")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(955, 619)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("2_u42qe")

@@ -1,0 +1,45 @@
+[gd_scene load_steps=3 format=3 uid="uid://cyt7l1s22d8tn"]
+
+[ext_resource type="Script" uid="uid://8lleftmfm5jb" path="res://script/textbox.gd" id="1_m1w5b"]
+[ext_resource type="Texture2D" uid="uid://2sgm0m4pl4w5" path="res://asset/image/Text box.png" id="2_47n42"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 254.00003
+offset_top = 240.0
+offset_right = 254.0
+offset_bottom = 240.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.8, 0.8)
+script = ExtResource("1_m1w5b")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(980, 517)
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("2_47n42")
+
+[node name="nama" type="Label" parent="."]
+layout_mode = 0
+offset_left = 267.0
+offset_top = 558.0
+offset_right = 557.0
+offset_bottom = 613.0
+theme_override_font_sizes/font_size = 30
+text = "Nama character"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="text" type="Label" parent="."]
+layout_mode = 0
+offset_left = 320.0
+offset_top = 698.0
+offset_right = 1619.0
+offset_bottom = 897.0
+theme_override_font_sizes/font_size = 30
+text = "Ini dialog ceritanya"
+
+[node name="Timer" type="Timer" parent="."]
