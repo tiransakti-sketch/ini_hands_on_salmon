@@ -1,12 +1,26 @@
-[gd_scene load_steps=3 format=3 uid="uid://dv7ne1bl3kmlf"]
+[gd_scene load_steps=5 format=3 uid="uid://dv7ne1bl3kmlf"]
 
 [ext_resource type="Script" uid="uid://cyfbm57clu60u" path="res://scene1.gd" id="1_6yo5u"]
 [ext_resource type="Texture2D" uid="uid://ccxuos8wfg8nw" path="res://asset/image/Desain MC 1.png" id="2_u42qe"]
+[ext_resource type="Texture2D" uid="uid://bev86ichpg0fq" path="res://Assets/MC/MC expression thinking.png" id="3_wpykg"]
+[ext_resource type="Texture2D" uid="uid://o1mfo4qn3h8n" path="res://Assets/MC/MC expression happy.png" id="4_to7a4"]
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource("1_6yo5u")
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
+[node name="mc1" type="Sprite2D" parent="."]
 position = Vector2(955, 619)
 scale = Vector2(0.3, 0.3)
 texture = ExtResource("2_u42qe")
+
+[node name="think" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(955, 619)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("3_wpykg")
+
+[node name="happy" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(955, 619)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("4_to7a4")

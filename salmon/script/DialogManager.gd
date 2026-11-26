@@ -1,6 +1,6 @@
 extends Node
 
-signal dialogue_ended  # Add this signal at the top
+signal dialogue_ended 
 
 @onready var textbox_scene = preload("res://scene/textbox.tscn")
 var dialog_lines: Array = []
@@ -61,4 +61,4 @@ func end_dialog():
 		text_box.queue_free()
 		text_box = null
 	
-	dialogue_ended.emit()  # Emit the signal when dialogue ends
+	dialogue_ended.emit() 
