@@ -1,11 +1,10 @@
-<<<<<<< HEAD
+Sprite2D
+AudioStreamPlayer2D
+AnimationPlayer
 Button
 Control
 VBoxContainer
 TextureRect
-=======
-Sprite2D
 Timer
 Label
 MarginContainer
->>>>>>> cfd63cecb103aedc499f7ff1d05f014c95643a9d

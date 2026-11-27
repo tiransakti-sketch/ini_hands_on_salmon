@@ -2,3 +2,4 @@ res://scene/textbox.tscn
 res://script/DialogManager.gd
 res://scene1.gd
 res://scene/scene1.tscn
+res://script/textbox.gd

@@ -1,12 +1,199 @@
-[gd_scene load_steps=5 format=3 uid="uid://dv7ne1bl3kmlf"]
+[gd_scene load_steps=21 format=3 uid="uid://dv7ne1bl3kmlf"]
 
 [ext_resource type="Script" uid="uid://cyfbm57clu60u" path="res://scene1.gd" id="1_6yo5u"]
 [ext_resource type="Texture2D" uid="uid://ccxuos8wfg8nw" path="res://asset/image/Desain MC 1.png" id="2_u42qe"]
+[ext_resource type="Texture2D" uid="uid://c8mkace7d0ck6" path="res://asset/image/table.png" id="3_ux3lh"]
 [ext_resource type="Texture2D" uid="uid://bev86ichpg0fq" path="res://Assets/MC/MC expression thinking.png" id="3_wpykg"]
 [ext_resource type="Texture2D" uid="uid://o1mfo4qn3h8n" path="res://Assets/MC/MC expression happy.png" id="4_to7a4"]
+[ext_resource type="Texture2D" uid="uid://c8di6k0a1poci" path="res://Assets/!!!! might be changed (from sketches folder)/Titlescreen.png" id="6_748me"]
+[ext_resource type="Texture2D" uid="uid://c3dkfubduj5gq" path="res://Assets/MC/MC expression silent.png" id="7_5earr"]
+[ext_resource type="Texture2D" uid="uid://bqmj51xni1lv3" path="res://asset/image/Khodam salmon boss.png" id="7_ux3lh"]
+[ext_resource type="Texture2D" uid="uid://pdb4ewb8fpfj" path="res://Assets/MC/MC expression sly.png" id="8_awkod"]
+[ext_resource type="Texture2D" uid="uid://b4ttl51x0jcmv" path="res://asset/image/Bg sesajen pelet.png" id="9_awkod"]
+[ext_resource type="Texture2D" uid="uid://c4olww07diltu" path="res://asset/image/khodam salmon mc.png" id="11_ohgby"]
+
+[sub_resource type="Animation" id="Animation_twc8k"]
+resource_name = "fade in"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimationPlayer/Sprite2D:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(0, 0, 0, 1), Color(0, 0, 0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_5earr"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimationPlayer/Sprite2D:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0, 0, 0, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("foto_sesajen:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("AnimationPlayer/white:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("salmon:modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("salmon mc:modulate")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0, 0, 0, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_ux3lh"]
+resource_name = "pelet_transfer"
+length = 5.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("foto_sesajen:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.23333333, 0.8666667, 1.2333333, 1.7333333, 2.18),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(0.9999997, 0.8923124, 0.81251043, 1), Color(0.85708934, 0.57483834, 0.36212203, 1), Color(1, 1, 1, 1), Color(0.75689495, 0.596621, 0.54308003, 1), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_ohgby"]
+resource_name = "kilat_cahaya"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimationPlayer/white:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.33333334, 0.8666667),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_7ktdc"]
+resource_name = "muncul salmon"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("salmon:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.33333334, 0.66),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 0.79607844), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_wq6mv"]
+resource_name = "salmon ilang"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("salmon:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.7),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_nuxbb"]
+resource_name = "salmon mc muncul"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("salmon mc:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.32, 0.8333333),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(0, 0, 0, 1), Color(0.8324741, 0.8324741, 0.8324741, 1), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_awkod"]
+_data = {
+&"RESET": SubResource("Animation_5earr"),
+&"fade in": SubResource("Animation_twc8k"),
+&"kilat_cahaya": SubResource("Animation_ohgby"),
+&"muncul salmon": SubResource("Animation_7ktdc"),
+&"pelet_transfer": SubResource("Animation_ux3lh"),
+&"salmon ilang": SubResource("Animation_wq6mv"),
+&"salmon mc muncul": SubResource("Animation_nuxbb")
+}
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_7ktdc"]
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource("1_6yo5u")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+
+[node name="foto_sesajen" type="Sprite2D" parent="."]
+position = Vector2(960.00006, 540)
+scale = Vector2(0.75, 0.75)
+texture = ExtResource("9_awkod")
+
+[node name="kamar" type="Sprite2D" parent="."]
+modulate = Color(0.79907984, 0.65700305, 0.6189226, 1)
+position = Vector2(960.00006, 540)
+scale = Vector2(0.75, 0.75)
+texture = ExtResource("3_ux3lh")
 
 [node name="mc1" type="Sprite2D" parent="."]
 position = Vector2(955, 619)
@@ -24,3 +211,46 @@ visible = false
 position = Vector2(955, 619)
 scale = Vector2(0.3, 0.3)
 texture = ExtResource("4_to7a4")
+
+[node name="salmon" type="Sprite2D" parent="."]
+visible = false
+modulate = Color(1, 1, 1, 0)
+position = Vector2(1075, 683)
+scale = Vector2(0.45, 0.45)
+texture = ExtResource("7_ux3lh")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_awkod")
+}
+
+[node name="Sprite2D" type="Sprite2D" parent="AnimationPlayer"]
+visible = false
+modulate = Color(0, 0, 0, 1)
+position = Vector2(1073, 618)
+texture = ExtResource("6_748me")
+
+[node name="white" type="Sprite2D" parent="AnimationPlayer"]
+modulate = Color(1, 1, 1, 0)
+position = Vector2(966.74994, 539.49994)
+scale = Vector2(1934.4999, 1095)
+texture = SubResource("CanvasTexture_7ktdc")
+
+[node name="silent" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(955, 619)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("7_5earr")
+
+[node name="sly" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(955, 619)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("8_awkod")
+
+[node name="salmon mc" type="Sprite2D" parent="."]
+visible = false
+modulate = Color(0, 0, 0, 1)
+position = Vector2(944.00006, 659)
+scale = Vector2(0.45, 0.45)
+texture = ExtResource("11_ohgby")

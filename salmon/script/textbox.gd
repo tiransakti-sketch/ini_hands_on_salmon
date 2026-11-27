@@ -17,7 +17,7 @@ signal finished_displaying()
 func display_text(text_to_display: String, speaker: String = ""):
 	name_label.text = speaker
 	name_label.visible = speaker != ""
-	print("display_text: " + text_to_display)
+	#print("display_text: " + text_to_display)
 	label.text = text_to_display
 	label.visible_characters = 0
 	
